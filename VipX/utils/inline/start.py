@@ -13,49 +13,67 @@ def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="•─╼⃝𖠁𝐀𝙳𝙳 ◈ 𝐌𝙴 ◈ 𝐁𝙰𝙱𝚈𖠁⃝╾─•",
-                url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                text="🥰 𝐎ᴜʀ 𝐆ʀᴏᴜᴩ 🥰",
+url=config.SUPPORT_GROUP
             )
         ],
         [
             InlineKeyboardButton(
-                text="🦋𝐅𝐄𝐀𝐓𝐔𝐑𝐄🦋",
+                text="🥹 𝐇ᴇʟᴩ 🥹",
                 callback_data="settings_back_helper",
             ),
             InlineKeyboardButton(
-                text="⚙️𝐒𝐄𝐓𝐓𝐈𝐍𝐆⚙️", callback_data="settings_helper"
+                text="😂 𝐒ᴇᴛᴛɪɴɢ𝐬 😂", callback_data="settings_helper"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="❣️ 𝐁ᴀᴅ𝗌ʜᴀʜ ❣️", url=f"https://t.me/Shivans_Raj_BrockenHart"),
+            InlineKeyboardButton(
+                text="❤️ 𝐁ᴇɢᴀᴍ ❤️", url=f"https://t.me/Ziddi_Rani"
+             ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="💖 𝐎ᴡɴᴇʀ 💖", user_id=OWNER),
+            InlineKeyboardButton(
+                text="💝 𝐂ᴏ 𝐎ᴡɴᴇʀ 💝", url=f"https://t.me/Sonu2860"
             ),
         ],
      ]
     return buttons
 
-#extra shit
-BOT_USERNAME = ("{BOT_USERNAME}")
 
 def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
-    global GROUP_USERNAME
-    global CHANNEL_USERNAME
     buttons = [
         [
             InlineKeyboardButton(
-                text="•─╼⃝𖠁𝐀𝙳𝙳 ◈ 𝐌𝙴 ◈ 𝐁𝙰𝙱𝚈𖠁⃝╾─•",
-                url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-            )
-        
-        ],
-        [
-            InlineKeyboardButton(
-                text="𝐌ᴏʀᴇ🥀", url=f"https://t.me/{CHANNEL_USERNAME}",
-            ),
-        
-            InlineKeyboardButton(
-                text="𝐆𝚁𝙾𝚄𝙿✨", url=f"https://t.me/{GROUP_USERNAME}",
+                text="🥰 𝐎ᴜʀ 𝐆ʀᴏᴜᴩ 🥰",
+url=config.SUPPORT_GROUP
             ),
         ],
         [
             InlineKeyboardButton(
-                text="۞ 𝐅𝙴𝙰𝚃𝚄𝚁𝙴𝚂 ۞", callback_data="settings_back_helper"
-            )
+                text="🥹 𝐇ᴇʟᴩ 🥹", callback_data="settings_back_helper"
+            ),
         ],
+        [
+            InlineKeyboardButton(
+                text="❣️ 𝐁ᴀᴅ𝗌ʜᴀʜ ❣️", url=f"https://t.me/Shivans_Raj_BrockenHart"),
+            InlineKeyboardButton(
+                text="❤️ 𝐁ᴇɢᴀᴍ ❤️", url=f"https://t.me/Ziddi_Rani"
+            ),
+        ],
+        [
+            InlineKeyboardButton(text="💖 𝐎ᴡɴᴇʀ 💖", user_id=OWNER),
+            InlineKeyboardButton(
+                text="💝 𝐂ᴏ 𝐎ᴡɴᴇʀ 💝", url=f"https://t.me/Sonu2860"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                    text="🌹 𝐒ᴛᴜᴅʏ 𝐆ʀᴏᴜᴘ  🌹", url=f"https://t.me/Study_House_Family"
+            ),
+           ],
      ]
     return buttons
